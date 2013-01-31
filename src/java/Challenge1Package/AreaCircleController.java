@@ -93,47 +93,5 @@ public class AreaCircleController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    /**
-     * @return the radius
-     */
-    public double getRadius() {
-        
-        return radius;
-    }
-
-    /**
-     * @param radius the radius to set
-     */
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    /**
-     * @return the pi
-     */
-    public double getPi() {
-        return pi;
-    }
-
-    /**
-     * @param pi the pi to set
-     */
-    public void setPi(double pi) {
-        this.pi = pi;
-    }
-
-    /**
-     * @return the circleArea
-     */
-    public double getCircleArea() {
-        circleArea = pi * (radius * radius);
-        return circleArea;
-    }
-
-    /**
-     * @param circleArea the circleArea to set
-     */
-    public void setCircleArea(double circleArea) {
-        this.circleArea = circleArea;
-    }
+  
 }
