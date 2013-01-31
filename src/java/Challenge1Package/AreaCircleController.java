@@ -18,9 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "AreaCircleController", urlPatterns = {"/AreaCircleController"})
 public class AreaCircleController extends HttpServlet {
-    private double radius;
-    private double pi = 3.14159265359;
-    private double circleArea;
+   
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
