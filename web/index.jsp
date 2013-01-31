@@ -17,15 +17,15 @@
     <form>
 Length: <input type="text" name="length"><br>
 Width: <input type="text" name="width">
- <p><a href="answer.jsp">Click here for answer</a></p>
+ 
      </form>
         <br>
         </br>
         <form>
              Radius: <input type="text" name="radius">
-              <p><a href="answer.jsp">Click here for answer</a></p>
+            
         </form>
-          
+            <p><a href="answer.jsp">Click here for answer</a></p>
 
     </body>
 </html>
