@@ -12,7 +12,7 @@
         <title>answers!</title>
     </head>
     <body>
-        <h1 align="center">Answer to imputed data area of a rectangle</h1>
+        <h1 align="center">Answer to imputed data</h1>
         
         <%
         List answer = (List)request.getAttribute("area");
