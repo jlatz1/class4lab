@@ -15,15 +15,10 @@
         <h1 align="center">Answer to imputed data</h1>
         
         <%
-        List answer = (List)request.getAttribute("area");
-        List answer1 = (List)request.getAttribute("areaOfCircle");
-        List answer2 = (List)request.getAttribute("traingle");
+        List answer = (List)request.getAttribute("area, areaOfCircle, traingle");
         Iterator it = answer.iterator();
-        Iterator it1 = answer1.iterator();
-        Iterator it2 = answer2.iterator();
         out.print("it.next()");
-        out.print("it1.next()");
-        out.print("it2.next()");
+        
                 %>
     </body>
 </html>
