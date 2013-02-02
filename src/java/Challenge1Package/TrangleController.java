@@ -19,9 +19,7 @@ import java.math.*;
  */
 @WebServlet(name = "TrangleController", urlPatterns = {"/TrangleController"})
 public class TrangleController extends HttpServlet {
-    private int a;
-    private int b;
-    private int c;
+  
     
     
 
@@ -38,20 +36,7 @@ public class TrangleController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet TrangleController</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet TrangleController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        } finally {            
-            out.close();
-        }
+     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -95,45 +80,4 @@ public class TrangleController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    /**
-     * @return the a
-     */
-    public int getA() {
-        return a;
-    }
-
-    /**
-     * @param a the a to set
-     */
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    /**
-     * @return the b
-     */
-    public int getB() {
-        return b;
-    }
-
-    /**
-     * @param b the b to set
-     */
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    /**
-     * @return the c
-     */
-    public int getC() {
-        return c;
-    }
-
-    /**
-     * @param c the c to set
-     */
-    public void setC(int c) {
-        this.c = c;
-    }
 }
