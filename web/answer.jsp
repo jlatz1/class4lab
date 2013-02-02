@@ -17,7 +17,7 @@
         <%
             Object param1 = request.getParameter("length, width");
             Object param2 = request.getParameter("radius, pi");
-            Object param3 = request.getParameter("thirdSide");
+            Object param3 = request.getParameter("a, b, c");
             List<Object> myParams = new ArrayList<Object>();
             myParams.add(param1);
             myParams.add(param2);
