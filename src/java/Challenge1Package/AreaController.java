@@ -32,7 +32,8 @@ public class AreaController extends HttpServlet {
         
         double length = Double.valueOf(request.getParameter("length"));
         double width = Double.valueOf(request.getParameter("width"));
-        
+        request.setAttribute("length", (length));
+        request.setAttribute("width", width);
         double area = this.getArea(length, width);
 
     }
