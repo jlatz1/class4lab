@@ -26,11 +26,11 @@ Width: <input type="text" name="width">
             
         </form>
         <form>
-            a = <input type="text" name="a">
+            a: <input type="text" name="a">
             
         </form>
         <form>
-            b = <imput type="text" name="b">
+            b: <imput type="text" name="b">
         </form>
             <p><a href="answer.jsp">Click here for answer</a></p>
 
