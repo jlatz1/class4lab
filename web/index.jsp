@@ -25,13 +25,17 @@ Width: <input type="text" name="width">
              Radius: <input type="text" name="radius">
             
         </form>
+        <br>
+        </br>
         <form>
             a: <input type="text" name="a">
-            
         </form>
+        <br>
+        </br>
         <form>
             b: <imput type="text" name="b">
         </form>
+        
             <p><a href="answer.jsp">Click here for answer</a></p>
 
     </body>
