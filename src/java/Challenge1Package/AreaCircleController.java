@@ -36,9 +36,10 @@ public class AreaCircleController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
        double radius = Double.valueOf(request.getParameter("radius"));
        double pi = 3.14159265359;
-       request.setAttribute("radius", (radius));
-       request.setAttribute("pi", pi);
        double areaOfCircle = this.getAreaOfCircle(radius, pi);
+       request.setAttribute("areaOfCircle", (areaOfCircle));
+      
+     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -82,6 +83,7 @@ public class AreaCircleController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
     public double getAreaOfCircle(double radius, double pi){
+    
         return radius * (pi * pi);
     }
   
