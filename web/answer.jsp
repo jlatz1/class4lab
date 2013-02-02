@@ -15,9 +15,21 @@
         <h1 align="center">Answer to imputed data</h1>
         
         <%
-        List answer = (List)request.getAttribute("area, areaOfCircle, traingle");
-        Iterator it = answer.iterator();
-        out.print("it.next()");
+            Object param1 = request.getParameter("area");
+            Object param2 = request.getParameter("areaOfCircle");
+            Object param3 = request.getParameter("thirdSide");
+            List<Object> myParams = new ArrayList<Object>();
+            myParams.add(param1);
+            myParams.add(param2);
+            myParams.add(param3);
+            
+            for(Object param : myParams) {
+                if(param != null) {
+                    out.println("<p>Param Value: " + param + "</p>");
+                } else {
+                    out.println("<p>No param info available</p>");
+                }
+            }
         
                 %>
     </body>

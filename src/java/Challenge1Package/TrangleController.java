@@ -36,6 +36,9 @@ public class TrangleController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        double a = Double.valueOf(request.getParameter("a"));
+        double b = Double.valueOf(request.getParameter("b"));
+        double c = Double.valueOf(request.getParameter("c"));
      
     }
 
@@ -79,5 +82,10 @@ public class TrangleController extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+    
+    public double getThirdSide(){
+        double thirdSide = 0;
+        return thirdSide;
+    }
 
 }
