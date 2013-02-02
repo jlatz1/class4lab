@@ -31,9 +31,11 @@ public class AreaController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         double length = Double.valueOf(request.getParameter("length"));
+        request.setAttribute("length", (length));
         double width = Double.valueOf(request.getParameter("width"));
+        request.setAttribute("width", width);
         double area = this.getArea(length, width);
-        request.setAttribute("area", (area));
+      
        
         
 
