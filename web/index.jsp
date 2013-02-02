@@ -30,7 +30,7 @@ Width: <input type="text" name="width">
         </br>
         <%-- this form is for the third side of a triangle --%>
         <form>
-            a: <input type="text" name="a">
+            a: <input type="text" name="a"><br>
             b: <imput type="text" name="b">
         </form>
       
