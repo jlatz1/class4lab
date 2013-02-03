@@ -15,9 +15,9 @@
         <h1 align="center">Answer to imputed data</h1>
         
         <%
-            Object param1 = request.getParameter("param1");
-            Object param2 = request.getParameter("param2");
-            Object param3 = request.getParameter("param3");
+            Object param1 = request.getParameter("length * width");
+            Object param2 = request.getParameter("radius * pi");
+            Object param3 = request.getParameter("Math.sqrt((a * a) + (b * b))");
             List<Object> myParams = new ArrayList<Object>();
             myParams.add(param1);
             myParams.add(param2);
