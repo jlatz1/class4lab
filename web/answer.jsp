@@ -15,9 +15,9 @@
         <h1 align="center">Answer to imputed data</h1>
         
         <%
-            Object param1 = request.getParameter("length, width");
-            Object param2 = request.getParameter("radius, pi");
-            Object param3 = request.getParameter("a, b, c");
+            Object param1 = request.getParameter("area");
+            Object param2 = request.getParameter("areaOfCircle");
+            Object param3 = request.getParameter("thirdSide");
             List<Object> myParams = new ArrayList<Object>();
             myParams.add(param1);
             myParams.add(param2);
