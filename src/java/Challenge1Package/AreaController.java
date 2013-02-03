@@ -5,6 +5,7 @@
 package Challenge1Package;
 
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author jlatz1
  */
 public class AreaController extends HttpServlet {
-
+      private static final String destination = "/answer.jsp";
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -35,7 +36,11 @@ public class AreaController extends HttpServlet {
         double width = Double.valueOf(request.getParameter("width"));
         request.setAttribute("width", width);
         double area = this.getArea(length, width);
-      
+        // Now can forward the request and response objects to the destination page,
+        // so long as it's a JSP or Servlet
+        RequestDispatcher dispatcher =
+                    getServletContext().getRequestDispatcher(destination);
+                dispatcher.forward(request, response);
        
         
 

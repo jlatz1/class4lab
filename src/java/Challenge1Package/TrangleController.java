@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.math.*;
+import javax.servlet.RequestDispatcher;
 
 /**
  *
@@ -19,7 +20,7 @@ import java.math.*;
  */
 @WebServlet(name = "TrangleController", urlPatterns = {"/TrangleController"})
 public class TrangleController extends HttpServlet {
-  
+  private static final String destination = "/answer.jsp";
     
     
 
@@ -44,7 +45,13 @@ public class TrangleController extends HttpServlet {
         request.setAttribute("c", c);
         
         double thirdSide = this.getThirdSide(a, b, c);
-        
+           // Now can forward the request and response objects to the destination page,
+        // so long as it's a JSP or Servlet
+        RequestDispatcher dispatcher =
+                    getServletContext().getRequestDispatcher(destination);
+                dispatcher.forward(request, response);
+    
+
      
     }
 

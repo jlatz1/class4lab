@@ -5,6 +5,7 @@
 package Challenge1Package;
 
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "AreaCircleController", urlPatterns = {"/AreaCircleController"})
 public class AreaCircleController extends HttpServlet {
-   
+     private static final String destination = "/answer.jsp";
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -40,9 +41,17 @@ public class AreaCircleController extends HttpServlet {
        request.setAttribute("pi", pi);
        double areaOfCircle = this.getAreaOfCircle(radius, pi);
        
+          // Now can forward the request and response objects to the destination page,
+        // so long as it's a JSP or Servlet
+        RequestDispatcher dispatcher =
+                    getServletContext().getRequestDispatcher(destination);
+                dispatcher.forward(request, response);
+    
+
       
      
     }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
